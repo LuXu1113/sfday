@@ -1,0 +1,16 @@
+#ifndef SFDAY_COMMON_INCLUDE_ERRNO_H_
+#define SFDAY_COMMON_INCLUDE_ERRNO_H_
+
+// 1 ~ 132 reserved for Linux errno
+enum FPGA_ERRNO {
+    SUCCESS                   = 0,
+    ERR_INVALID_KEY           = 150,
+    ERR_DUPLICATE_KEY         = 151,
+    ERR_INVALID_SIGNAL_TYPE   = 152,
+    ERR_INDEX_OUT_OF_RANGE    = 153,
+    ERR_ADDR_NOT_ALIGNED      = 154,
+    ERR_PTHREAD_CREATE_FAILED = 155,
+    ERR_THREAD_POOL_FULL      = 156,
+    ERR_THREAD_POOL_NOT_INUSE = 157,
+};
+#endif
